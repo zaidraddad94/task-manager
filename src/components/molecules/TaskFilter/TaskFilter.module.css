@@ -1,0 +1,73 @@
+.filterContainer {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 90%;
+  padding-top: 25px;
+  padding-left: 20px;
+  margin-right: 20px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 18;
+  color: #000;
+  margin-bottom: 20px;
+  margin-top: 0;
+  padding-top: 30;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #333;
+}
+
+.radioInput {
+  margin-right: 10px;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #f6f6ff;
+  border-radius: 50%;
+  position: relative;
+  background-color: #f6f6ff;
+}
+
+.radioInput:checked::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #3b82f6;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.radioInput:checked::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 12px;
+  height: 12px;
+  background-color: #3b82f6;
+  border-radius: 50%;
+}

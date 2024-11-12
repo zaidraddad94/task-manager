@@ -3,6 +3,7 @@ import AddTaskButton from "./components/atoms/AddTaskButton/AddTaskButton";
 import CustomHeader from "./components/molecules/CustomHeader/CustomHeader";
 import MainLayout from "./components/Layout/MainLayout/MainLayout";
 import ContentLayout from "./components/Layout/ContentLayout/ContentLayout";
+import TaskFilter from "./components/molecules/TaskFilter/TaskFilter";
 
 const AppContainer: React.FC = () => {
   const handleAddTask = () => {
@@ -15,7 +16,7 @@ const AppContainer: React.FC = () => {
         title="Task Management"
         button={<AddTaskButton onClick={handleAddTask} />}
       />
-      <ContentLayout left={<div />} right={<div />} />
+      <ContentLayout left={<TaskFilter />} right={<div />} />
     </MainLayout>
   );
 };
