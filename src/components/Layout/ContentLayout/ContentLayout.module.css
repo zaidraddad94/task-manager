@@ -1,7 +1,7 @@
 .container {
   display: flex;
   width: 80%;
-  height: 100vh;
+  height: 80vh;
   margin-top: 20px;
 }
 
@@ -13,7 +13,5 @@
 
 .right {
   flex: 1;
-  padding: 20px;
   overflow-y: auto;
-  background-color: black;
 }

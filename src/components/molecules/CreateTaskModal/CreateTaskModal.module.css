@@ -1,0 +1,131 @@
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContainer {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 500px;
+  height: inherit;
+}
+
+.modalTitle {
+  font-family: "Quicksand", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #0c1049;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.input,
+.textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.textarea {
+  height: 80px;
+  resize: none;
+}
+
+.errorText {
+  color: #ff6b00;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.cancelButton {
+  background-color: #f0f4f8;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 50%;
+  height: 48px;
+}
+
+.createButton {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 50%;
+  height: 48px;
+}
+
+.categoryInputContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.categories {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.categoryChip {
+  background-color: #f0f4f8;
+  color: #3b82f6;
+  border-radius: 20px;
+  padding: 6px 12px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.removeCategory {
+  margin-left: 8px;
+  color: #888;
+  cursor: pointer;
+}
+
+.addCategoryButton {
+  padding: 8px 12px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
