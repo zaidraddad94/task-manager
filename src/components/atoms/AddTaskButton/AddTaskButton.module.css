@@ -1,0 +1,15 @@
+.button {
+  width: 145px;
+  height: 40px;
+  background-image: url("/src//assets/newTaskButton.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  transition: background-image 0.3s ease;
+  border-radius: 50px;
+}
+
+.button:hover {
+  background-image: url("/src/assets/AddTaskButtonHover.png");
+}
